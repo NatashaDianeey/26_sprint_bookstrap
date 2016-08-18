@@ -5,10 +5,12 @@
 		<title>Flatness: Responsive Blog</title>
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
-		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 		<link rel="stylesheet" href="css/font-awesome.css">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/main.css">
+		<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+		<script src="js/bootstrap.min.js"> </script>
 	</head>
 	<body>
 		<article>
@@ -17,23 +19,29 @@
 				<header>	<!-- HEADER col 6,imagen, col6, menu -->
 					<div class="container-fluid bkg-purp-header">
 						<div class="row">
-							<div class="col-xs-6 col-md-6"><!--LOGO XS-movil / MD-desktop -->
-								<img class="logo" src="image/header-logo.png" alt="Flatness"/>	
-							</div>
-							<div class="col-xs-6 col-md-6"><!--MENU XS-movil / MD-desktop -->
-								<!-- menu hamburguesa PRIMER INTENTO DE MENU-->
-								<input type="checkbox" id="btn-menu">
-								<label for="btn-menu"> <img class="menu-hamb" src="image/menu.png" alt="Menú"></label>
-								<nav class="menu">
-									<ul>
-										<a href="https://www.google.com.mx/"><li>LIFESTYLE</li></a>
-										<a href="https://www.google.com.mx/"><li>FLOWERS</li></a>
-										<a href="https://www.google.com.mx/"><li>FASHION</li></a>
-										<a href="https://www.google.com.mx/"><li>NEWS</li></a>
-										<a href="https://www.google.com.mx/"><li>FEACTURES</li></a>
-									</ul>
-								</nav>	
-								
+							<div class="col-xs-12">
+							<!--MENU XS-movil / MD-desktop -->
+								<nav class="bkg-purp-2 marg navbar navbar-inverse">
+								  <div class="container-fluid">
+								    <div class="navbar-header">
+								      <button type="button" class="bkg-purp-header navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+								        <span class="icon-bar"></span>
+								        <span class="icon-bar"></span>
+								        <span class="icon-bar"></span>
+								      </button>
+								      <a href="#"><img class="logo" src="image/header-logo.png" alt=""></a>
+								    </div>
+								    <div class="collapse navbar-collapse" id="myNavbar">
+								      <ul class="nav navbar-nav">
+								        <li class="active"> <a href="https://www.google.com.mx/">LIFESTYLE</a></li>
+										<li> <a href="#">FLOWERS</a></li>
+										<li> <a href="#">FASHION</a></li>
+										<li> <a href="#">NEWS</a></li>
+										<li> <a href="#">FEACTURES</a></li>
+							      	</ul>
+								    </div>
+								  </div>
+								</nav>
 							</div>
 						</div>
 					</div>
@@ -134,7 +142,5 @@
 				</div>
 			</div>
 		</footer>
-		<script src="js/bootstrap.js"> </script>
-		<script src="jquery/jquery.js"> </script>
 	</body>
 </html>
